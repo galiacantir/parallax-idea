@@ -1,0 +1,205 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8em;
+    color: #666;
+
+    overflow-x: hidden;
+
+    /*---variables---*/
+
+    --light-section: #f4f4f4;
+    --dark-section: #282e34;
+    --light-text-color: #666;
+    --dark-text-color: #ddd;
+    --hover-color: #ff3300;
+    --tools-color: #212121;
+    --text--color: whitesmoke;
+    
+}
+
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+/*--- Navbar Style ---*/
+
+
+
+header{
+    height: auto;
+    padding: 30px 30px;
+    background-color: var(--tools-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    color: var(--text--color);
+    letter-spacing: 2px;
+}
+
+header nav a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-right: 10px;
+    color: var(--text--color);
+    transition: .4s;
+}
+
+header nav a:hover{
+    color: var(--hover-color);
+}
+
+
+
+.parallax--img--1, .parallax--img--2, .parallax--img--3, 
+.parallax--img--4, .parallax--img--5{
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+
+}
+
+
+.parallax--img--1{
+    background-image: url(img/sunrise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.parallax--img--2{
+    background-image: url(img/hot-air-ballon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.parallax--img--3{
+    background-image: url(img/mountaineer-2100050_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.parallax--img--4{
+    background-image: url(img/boat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.parallax--img--5{
+    background-image: url(img/poppies-174276_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: var(--light-section);
+    color: var(--light-text-color);
+}
+
+.section-dark{
+    background-color: var(--dark-section);
+    color: var(--dark-text-color);
+}
+
+.parallax-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.parallax-text .border{
+    background-color: #111;
+    color: var(--text--color);
+    padding: 20px;
+}
+
+footer{
+    background-color: var(--tools-color);
+    color: var(--light-text-color);
+    height: auto;
+    padding-top: 10px;
+    
+}
+
+footer ul{
+    padding: 0;
+}
+
+.footer--title {
+    text-decoration: none;
+    color: var(--text--color);
+    transition: .4s;
+}
+
+.footer--title:hover{
+    color: var(--hover-color);
+}
+
+.footer--content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: var(--text--color);
+}
+
+.socials a i{
+    font-size: 20px;
+    transition: .4s;
+}
+
+.socials a:hover i{
+    color: var(--hover-color);
+}
+
+.footer--bottom{
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
